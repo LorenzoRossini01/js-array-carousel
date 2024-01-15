@@ -52,7 +52,7 @@ Non lasciamoci spaventare dalla complessità apparente dell'esercizio, ma analiz
   - aggiungere la classe active alla slide con index = all'indice del FOR
   - inserire le immagini nella pagina html
 
-- creare un evento 'click' per la freccia next
-- recupero tutte le slide attraverso una classe comune
-- rimuovo la classe active da quella che la aveva 'oldSlide'
-- aggiungo la classe active all' immagine successiva usando l'indice aggiornato
+- creare un evento 'click' per la freccia next e prev
+  - recupero tutte le slide attraverso una classe comune
+  - rimuovo la classe active da quella che la aveva 'oldSlide'
+  - aggiungo la classe active all' immagine successiva usando l'indice aggiornato
