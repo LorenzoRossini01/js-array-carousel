@@ -1,0 +1,51 @@
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-container {
+  width: 1200px;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide-container,
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  object-fit: cover;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.prev-arrow-container,
+.next-arrow-container {
+  background-color: #ffffff9e;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.prev-arrow-container {
+  top: 20px;
+}
+.next-arrow-container {
+  bottom: 20px;
+}
