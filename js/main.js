@@ -55,6 +55,18 @@ for (let i = 0; i < allThumbs.length; i++) {
   });
 }
 
+slideContainerEl.addEventListener("mouseleave", function () {
+  const changeSlide = setInterval(function () {
+    const nextSlideIndex = activeImage + 1;
+    goToSlide(nextSlideIndex);
+    console.log("slide cambiata");
+  }, 3000);
+  slideContainerEl.addEventListener("mouseover", function () {
+    clearInterval(changeSlide);
+    console.log("slide freeze");
+  });
+});
+
 function goToSlide(slideIndex) {
   const allThumbs = document.getElementsByClassName("slide-small");
   const oldThumb = allThumbs[activeImage];
